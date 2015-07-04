@@ -1,0 +1,224 @@
+.jumbotron{
+	background-image: url("https://ppcdn.500px.org/38711348/6ca6e6cad3b97601407918262d3142e5bd35a371/2048.jpg");
+	height: 750px;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 0px;
+}
+
+.jumbotron .container{
+	position: relative;
+	top: 20px;
+}
+
+.jumbotron h1{
+	background-color: rgba(255,255,255, 0.6);
+    color: rgb(80, 80, 80);
+    font-size: 80px;
+    font-family: "Lato";
+    font-weight: 900;
+}
+
+h1 span{
+	display: block;
+	text-align: center;	
+}
+
+#mainContent{
+	margin-top: 60px;
+}
+
+.introHeader h1{
+	font-family: 'Lato';
+	font-weight: 900;
+	font-size: 53px;
+	text-transform: uppercase;
+}
+
+hr{
+	border-top: 1px solid #FFB28B;
+}
+
+.introBody{
+	margin-top: 40px;
+}
+
+.introBody h3{
+	font-family: 'Lato';
+	font-weight: 400;
+	line-height: 2;
+	margin-top: 0;
+}
+
+.introBody p{
+	font-family: 'Lato';
+	font-weight: 300;
+	line-height: 2.5;
+	font-size: 17px;
+}
+
+h3 span{
+	display: block;
+}
+
+#accommodation{
+	margin-top: 100px;
+}
+
+.accommodationHeader{
+	background-color: rgb(8, 157, 227);
+	padding: 70px 0;
+}
+
+.accommodationHeader h2{
+	font-family: 'Lato';
+	font-weight: 400;
+	text-align: center;
+	font-size: 45px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.accommodationHeader hr{
+	border-top-color: white;
+}
+
+h4 span{
+	display: block;
+	font-family: 'Lato';
+	font-weight: 400;
+}
+
+.accommodationContent{
+	background-color: #F8F8F8;
+	padding-top: 40px;	
+}
+
+.apartmentLeft h2{
+	margin-top: 10px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-family: 'Lato';
+	font-weight: 300;
+}
+
+.apartmentLeft h4{
+	line-height: 2;
+}
+
+.apartmentLeft p{
+	font-family: 'Lato';
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.apartmentLeft table{
+	font-family: 'Lato';
+	font-weight: 300;
+}
+
+.apartmentBody img{
+	width: 100%;
+	height: 100%;
+}
+
+.slider { margin: 50px 0 10px!important;}
+.flexslider { margin-bottom: 0px; border-width: 3px;}
+#carousel {border-left: none; border-right:none; border-top: 0px;}
+#carousel li {margin-right: 5px;}
+#carousel img {display: block; opacity: .5; cursor: pointer;}
+#carousel img:hover {opacity: 1;}
+#carousel .flex-active-slide img {opacity: 1; cursor: default;}
+
+
+
+#prices{
+	margin-top: 20px;
+}
+
+#prices h4{
+	font-family: 'Lato';
+	font-weight: 300;
+	text-align: center;
+}
+
+#prices hr{
+	border-color: rgb(8, 157, 227);
+	width: 150px;
+	margin: 5px auto;
+}
+
+.locationHeader{
+	background-color: rgb(8, 157, 227); 
+	padding: 70px 0;
+}
+
+.locationHeader h2{
+	font-family: 'Lato';
+	font-weight: 400;
+	text-align: center;
+	font-size: 45px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.locationHeader hr{
+	border-top-color: white;
+}
+
+.locationBody .container-fluid{
+	padding: 0;
+}
+
+.contactHeader{
+	background-color: rgb(8, 157, 227); 
+	padding: 70px 0;
+}
+
+.contactHeader h2{
+	font-family: 'Lato';
+	font-weight: 400;
+	text-align: center;
+	font-size: 45px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.contactHeader hr{
+	border-top-color: white;
+}
+
+.contactBody{
+	margin-top: 60px;
+	font-family: 'Lato'
+}
+
+.contactBody img{
+	align: 'middle';
+	height: 360px;
+}
+
+#imgPlanet{
+	width: 55%;
+	margin: 0 auto;
+}
+
+.contactBody button{
+	background-color: #089DE3;
+	color: white;
+	border-color: transparent;
+}
+
+.contactBody button:hover{
+	background-color: rgba(8, 157, 227, 0.8);
+	color: white;
+	border-color: transparent;
+};
+
+.contactBody button:visited{
+	background-color: #089DE3;
+	color: white;
+	border-color: transparent;
+};
+

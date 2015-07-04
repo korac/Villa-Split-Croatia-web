@@ -1,0 +1,155 @@
+/*  ****  Made my Kristijan ****  */
+
+.nav a{
+    color: lightslategray;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav .container{
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+.jumbotron{
+    background-image: url("https://ppcdn.500px.org/38711348/6ca6e6cad3b97601407918262d3142e5bd35a371/2048.jpg");
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 0px;
+}
+
+.jumbotron .container{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 200px;
+    width: 1200px;
+}
+
+.jumbotron h1{
+    color: rgb(80, 80, 80);
+    font-size: 80px;
+    font-family: "Shift", sans-serif;
+    font-weight: bold;
+    position: fixed;   /*zbog ovoga je maknut naslov malo prema gori*/
+}
+
+.jumbotron p{
+    color: #fff;
+    font-size: 20px;
+}
+
+#startingCont{
+    background-color: rgba(255,255,255, 0.6);
+    margin: 0 20px;
+    border-radius: 5px;
+    height: 100%;
+    /*position: fixed;*/
+    z-index: 10;
+}
+
+#startingCont h1{
+    display: none;
+}
+
+#introButton{
+    color: #505050;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 0;
+    font-family: "Shift", sans-serif;
+    border: thick solid rgba(80, 80, 80, 0.74);
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    text-decoration: none;
+}
+
+#mainCont{
+    position: relative;
+    background-color: white;
+    z-index: 100;
+}
+
+.newIntroduction{
+    padding-top: 100px;
+    position: relative;
+}
+
+.newIntroduction h1{
+    font-size: 53px;
+    font-weight: 900;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.newIntroduction h3{
+    font-family: 'Lato';
+    font-weight: 400;
+    line-height: 2;
+    margin-top: 0;
+}
+
+.newIntroduction p{
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 2.5;
+}
+
+.newIntroduction img {
+    height: 200px;
+    width: 200px;
+}
+
+.newIntroTop{
+    padding-bottom: 87px;
+}
+
+.newIntroCont{}
+
+hr{
+    border-top: 1px solid #FFB28B;
+}
+
+.introduction{
+    background-color: rgba(71, 236, 186, 0.27);   
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.introduction img{
+    /*-webkit-mask-image: -webkit-linear-gradient(right, rgba(0,0,0,1), rgba(0,0,0,0));*/
+    height: 249px;
+    width: 585px;
+}
+
+.introduction h2{
+    margin: auto 0;
+    font-family: 'Lato';
+}
+
+.introduction hr{
+    margin: 15px 0;
+}
+
+.introduction p{
+    font-size: 18px;
+    font-family: 'Lato';
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.apartCont h2{
+    font-family: 'Lato';
+    text-align: center;
+}

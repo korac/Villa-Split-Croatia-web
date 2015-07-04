@@ -1,0 +1,27 @@
+{
+  "name": "VillaSplitCroatia",
+  "version": "0.0.0",
+  "authors": [
+    "korac <kkorac@fesb.hr>"
+  ],
+  "description": "apartments website",
+  "main": "index.html",
+  "keywords": [
+    "apartments",
+    "accommodation",
+    "croatia"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "angular": "~1.4.1",
+    "jquery": "~2.1.4"
+  }
+}
