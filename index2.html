@@ -3,7 +3,7 @@
 	<head lang="en">
 	    <meta charset="UTF-8">
 	    <title>Villa Split Croatia</title>
-
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
 	    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
 	    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	    <link rel="stylesheet" href="styles/flexslider.css" type="text/css" media="screen" />
@@ -12,7 +12,7 @@
 	    <link rel="stylesheet" type="text/css" href="styles/main2.css">  
 	</head>
 
-	<body>
+	<body ng-app="VillaApp">
 		<!-- NAVBAR -->
 		<div class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
@@ -28,22 +28,22 @@
 
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li class="active">
-							<a href="#">Home</a>
+						<li>
+							<a href="#/" data-scroll-nav="0">Home</a>
 						</li>
 						<li>
-							<a href="#about">About us</a>
+							<a href="#about" data-scroll-nav="1">About us</a>
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="#accommodation">Accommodation</a>
+							<a href="#accommodation" data-scroll-nav="2">Accommodation</a>
 						</li>
 						<li>
-							<a href="#location">Location</a>
+							<a href="#location" data-scroll-nav="3">Location</a>
 						</li>
 						<li>
-							<a href="#contact">Contact</a>
+							<a href="#contact" data-scroll-nav="4">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -52,10 +52,10 @@
 		</div>
 
 		<!-- JUMBOTRON -->
-		<div class="jumbotron">
+		<div class="jumbotron" data-scroll-index="0" ng-controller="controller">
 			<div class="container">
 				<h1>
-					<span>Discover the city of</span>
+					<span>{{title}}</span>
 					<span>Split</span>
 				</h1>
 				<div>
@@ -68,7 +68,7 @@
 		<div id="mainContent">
 
 			<!-- ABOUT AND WELCOME-->
-			<div id="about">
+			<div id="about" data-scroll-index="1">
 				<div  class="container">
 
 					<div class="introHeader row">
@@ -97,7 +97,7 @@
 			</div>
 
 			<!-- ACCOMMODATION AND APARTMENTS-->
-			<div id="accommodation">
+			<div id="accommodation" data-scroll-index="2">
 				
 				<div class="accommodationHeader">
 					<div class="container">
@@ -107,166 +107,41 @@
 								<hr>
 							</div>
 						</div>
+						<div class="row">
+							<h4>Choose your apartment</h4>
+							<div class="col-md-12">
+								<div class="btn-group btn-group-justified" role="group" aria-label="...">
+								  <div class="btn-group" role="group">
+								    <a href="#/"><button type="button" class="btn btn-default active" id="btn1" role="button">A1</button></a>
+								  </div>
+								  <div class="btn-group" role="group">
+								    <a href="#/apartmentA2"><button type="button" class="btn btn-default" id="btn2" role="button">A2</button></a>
+								  </div>
+								  <div class="btn-group" role="group">
+								    <a href="#/apartmentA3"><button type="button" class="btn btn-default" id="btn3" role="button">A3</button></a>
+								  </div>
+								</div>
+							</div>
+							
+							<!--<div class="col-md-12">
+								<ul class="nav nav-pills">
+								  <li role="presentation"><a href="#/">A1</a></li>
+								  <li role="presentation"><a href="#/apartmentA2">A2</a></li>
+								  <li role="presentation"><a href="#/apartmentA3">A3</a></li>
+								</ul>
+							</div>		-->					
+						</div>
 					</div>								
 				</div>
 
+			<div ng-view></div>											
 
-
-				<div class="accommodationContent">						
-					<div class="accommodationBody container">
-						<div class="apartment">
-
-
-							<div class="apartmentBody row">
-								<div class="col-md-4">
-									<div class="apartmentLeft">
-										<h2>Apartment A1 - ground floor</h2>
-										<h4>
-											<span><strong>114 m²</strong></span>
-											<span><strong>5 persons</strong> (+ 1-2 by arrangement)</span>
-										</h4>
-									
-										<p>Interesting choice for your friends or a family or two. Enjoy in commodious, modern equipped apartment with air conditioner in the ground floor, surruonded with garden full of flowers and mediterranean herbs.</p>
-										<table class="table">
-											<thead><tr><th>Details</th></tr></thead>
-											<tr><td>Central heating system, air-conditioner</td></tr>
-											<tr><td>3 bedrooms</td></tr>
-											<tr><td>Living-room (1-2 persons, secondary bed)</td></tr>
-											<tr><td>Kitchen with dining-room (washing-mashine, cooker, fridge, freezer, coffee maker, microwave, iron, hair-drier, related cutlery 5+2)</td></tr>
-											<tr><td>Bath + wc, bide</td></tr>
-											<tr><td>Bathroom, parking space, garden</td></tr>
-											<tr><td>Sea-view balcony, SAT-TV</td></tr>
-											<tr><td>Towels, toailet paper, soap</td></tr>
-											<tr><td>Cleaning the apartment every day by arrangement</td></tr>
-										</table>
-
-										
-										
-									</div>
-								</div>
-								<div class="col-md-8">
-									<!-- SLIDER -->
-									<div id="slider" class="flexslider">
-									 	<ul class="slides">										 		
-										    <li>
-										      <img src="./photos/a1-11.jpg" />
-										    </li>
-										    <li>
-									      	  <img src="./photos/a1-10.jpg" />
-									    	</li>
-										    <li>
-										      <img src="./photos/a1-12.jpg" />
-										    </li>
-										    <li>
-										      <img src="./photos/a1-13.jpg" />
-										    </li>
-										    <li>
-										      <img src="./photos/a1-14.jpg" />
-										    </li>
-										    <!-- items mirrored twice, total of 12 -->
-										    <li>
-										      <img src="./photos/a1-15.jpg" />
-										    </li>
-										    <li>
-										      <img src="./photos/a1-1.jpg" />
-										    </li>
-										    <li>
-										      <img src="./photos/a1-2.jpg" />
-										    </li>
-										    <li>
-										      <img src="./photos/a1-3.jpg" />
-										    </li>
-										    <li>
-										      <img src="./photos/a1-4.jpg" />
-										    </li>
-										    <li>
-										      <img src="./photos/a1-5.jpg" />
-										    </li>
-										    <li>
-										      <img src="./photos/a1-6.jpg" />
-										    </li>
-										    <li>
-										      <img src="./photos/a1-7.jpg" />
-										    </li>
-									    </ul>
-									</div>
-
-									<div id="carousel" class="flexslider">
-									  <ul class="slides">
-									  	<li>
-									      <img src="./photos/a1-11.jpg" />
-									    </li>
-									    <li>
-									      <img src="./photos/a1-10.jpg" />
-									    </li>
-									    <li>
-									      <img src="./photos/a1-12.jpg" />
-									    </li>
-									    <li>
-									      <img src="./photos/a1-13.jpg" />
-									    </li>
-									    <li>
-									      <img src="./photos/a1-14.jpg" />
-									    </li>
-										<li>
-										    <img src="./photos/a1-15.jpg" />
-										</li>
-										<li>
-										    <img src="./photos/a1-1.jpg" />
-										</li>
-										<li>
-										    <img src="./photos/a1-2.jpg" />
-										</li>
-										<li>
-										    <img src="./photos/a1-3.jpg" />
-										</li>
-										<li>
-										    <img src="./photos/a1-4.jpg" />
-										</li>
-										<li>
-										    <img src="./photos/a1-5.jpg" />
-										</li>
-										<li>
-										    <img src="./photos/a1-6.jpg" />
-										</li>
-										<li>
-										    <img src="./photos/a1-7.jpg" />
-										</li>										   	
-									    <!-- items mirrored twice, total of 12 -->
-									  </ul>
-									</div>
-
-									<!-- PRICES TABLE -->
-									<div id="prices">
-										<h4>Prices</h4>
-										<hr>
-										<table class="table">
-											<thead>
-												<tr>
-													<th>01.09.-15.10</th>
-													<th>16.10.-30.03</th>
-													<th>01.04.-30.06</th>
-													<th>01.07-31.08</th>
-												</tr>
-											</thead>												
-											<tr>
-												<td>98,00€</td>
-												<td>89,00€</td>
-												<td>98,00€</td>
-												<td>119,00€</td>
-											</tr>
-										</table>											
-									</div>								
-								</div>
-							</div>
-						</div>
-					</div>					
-				</div>								
+				
 			</div>
 
 
 			<!-- LOCATION -->
-			<div id="location">
+			<div id="location" data-scroll-index="3">
 
 				<div class="locationHeader">
 					<div class="container">
@@ -291,7 +166,7 @@
 
 
 			<!-- CONTACT -->
-			<div id="contact">
+			<div id="contact" data-scroll-index="4">
 				
 				<div class="contactHeader">
 					<div class="container">
@@ -315,7 +190,7 @@
 						<div class="col-md-6 col-md-offset-1">
 							<form class="form-horizontal" role="form">
 								<fieldset>
-									<legend>Wherever you are, do not hesitate to contact us :)</legend>
+									<legend>Wherever you are, feel free to contact us :)</legend>
 									<div class="form-group">
 										<label class="control-label col-md-2" for="name">Name: </label>
 										<div class="col-md-10">
@@ -335,8 +210,8 @@
 										</div>
 									</div>
 									<div class="form-group">
-										<div class="col-sm-offset-2 col-sm-10">
-	      									<button type="button" class="btn btn-default btn-block">Submit</button>
+										<div class="col-md-offset-2 col-md-10 col-xs-12">
+	      									<button type="button" class="btn btn-default btn-block">Send</button>
 	    								</div>
 									</div>		
 								</fieldset>						
@@ -348,8 +223,48 @@
 
 			<!-- FOOTER -->
 			<footer>
-				<div class="container"></div>
+				<div class="container">
+					<div class="row">
+						<div id="footerLeft" class="col-md-4">
+							<div>
+								<ul class="list-inline">
+									<li class="active">
+										<a href="#" data-scroll-nav="0">Home</a>
+									</li>
+									<li>
+										<a href="#about" data-scroll-nav="1">About us</a>
+									</li>			
+									<li>
+										<a href="#accommodation" data-scroll-nav="2">Accommodation</a>
+									</li>
+									<li>
+										<a href="#location" data-scroll-nav="3">Location</a>
+									</li>
+									<li>
+										<a href="#contact" data-scroll-nav="4">Contact</a>
+									</li>
+								</ul>
+							</div>
+							<hr>
+							<div>Copyright <span class="glyphicon glyphicon-copyright-mark"></span> Villa Split Croatia - Villa Žnjan</div>
+						</div>
+						<div id="footerRight" class="col-md-2 col-md-offset-6 col-xs-3 col-xs-offset-9">
+								<h4 style="display:inline">Find us :)</h4>
+								<a href="https://www.facebook.com/pages/Villa-%C5%BDnjan/211292868903668?fref=ts" target="_blank">
+									<img src="./Facebook.png">
+								</a>														
+						</div>
+					</div>
+				</div>
 			</footer>
+
+			<!-- GO TO TOP BUTTON -->
+ 			<a href="#/" data-scroll-goto="0" class="go-to-top">
+				<h4><i class="fa fa-angle-double-up"></i></h4>
+				<span>Back to the top</span>
+			</a>
+
+			
 		</div>
 
 
@@ -358,6 +273,7 @@
 
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
 	    <script	type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>	  
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
@@ -365,6 +281,7 @@
         <script type="text/javascript" src="js/app.js"></script>
         <script type="text/javascript" src="js/jquery.flexslider.js"></script>
         <script type="text/javascript" src="js/googleMap.js"></script>
+        <script type="text/javascript" src="js/scrollIt.js"></script>
 	</body>
 
 </html>

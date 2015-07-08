@@ -26,6 +26,12 @@ var main = function(){
     sync: "#carousel"
   });
 
+  $.scrollIt();
+
+  $('.btn.btn-default').click(function(){
+    $('.btn.btn-default').removeClass('active');
+    $(this).addClass('active');
+  });
 };
 
 $(document).ready(main);
