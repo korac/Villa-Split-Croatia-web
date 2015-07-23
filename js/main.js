@@ -2,29 +2,13 @@
  * Created by Kristijan on 16.2.2015..
  */
 var main = function(){
-    $("#startingCont h1").show("drop",{direction: "up"}, 1200);
+    /*$("#headline").show("drop",{direction: "up"}, 600);
+
+    $('#iconDown').fadeIn('slow');*/
 
     setInterval(function(){
-        $("#introButton").fadeIn();
-    }, 700);
-
-    $('#carousel').flexslider({
-    animation: "slide",
-    controlNav: false,
-    animationLoop: false,
-    slideshow: false,
-    itemWidth: 210,
-    itemMargin: 5,
-    asNavFor: '#slider'
-  });
- 
-  $('#slider').flexslider({
-    animation: "slide",
-    controlNav: false,
-    animationLoop: false,
-    slideshow: false,
-    sync: "#carousel"
-  });
+        $(".banner-background").fadeOut();
+    }, 450);
 
   $.scrollIt();
 
@@ -32,6 +16,11 @@ var main = function(){
     $('.btn.btn-default').removeClass('active');
     $(this).addClass('active');
   });
+
+  /*$('.navbar li').click(function(){
+    $('.btn.btn-default').removeClass('active');
+    $('#btn1').addClass('active');    
+  });*/
 };
 
 $(document).ready(main);

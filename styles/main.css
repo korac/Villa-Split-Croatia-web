@@ -1,155 +1,404 @@
-/*  ****  Made my Kristijan ****  */
-
-.nav a{
-    color: lightslategray;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 14px 10px;
-    text-transform: uppercase;
+.navbar-fixed-top{
+	font-family: 'Lato';
+	font-weight: 300;
+	font-size: 13px;
+	border: none;
+	text-transform: uppercase;
 }
 
-.nav li{
-    display: inline;
-}
-
-.nav .container{
-    margin-top: 10px;
-    background-color: #ffffff;
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	background-color: rgb(8, 157, 227);
+	color: white;
 }
 
 .jumbotron{
-    background-image: url("https://ppcdn.500px.org/38711348/6ca6e6cad3b97601407918262d3142e5bd35a371/2048.jpg");
-    height: 750px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+	/*background-image: url("https://ppcdn.500px.org/38711348/6ca6e6cad3b97601407918262d3142e5bd35a371/2048.jpg");*/
+	height: 750px;
+	background: none;
     margin-bottom: 0px;
 }
 
 .jumbotron .container{
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: 200px;
-    width: 1200px;
+	position: relative;
+	width: auto;
+	height: 702px;
+	background-color: rgba(0,0,0, 0.6);
+	max-width: none;
 }
 
 .jumbotron h1{
-    color: rgb(80, 80, 80);
-    font-size: 80px;
-    font-family: "Shift", sans-serif;
-    font-weight: bold;
-    position: fixed;   /*zbog ovoga je maknut naslov malo prema gori*/
-}
-
-.jumbotron p{
-    color: #fff;
-    font-size: 20px;
-}
-
-#startingCont{
-    background-color: rgba(255,255,255, 0.6);
-    margin: 0 20px;
-    border-radius: 5px;
-    height: 100%;
-    /*position: fixed;*/
-    z-index: 10;
-}
-
-#startingCont h1{
-    display: none;
-}
-
-#introButton{
-    color: #505050;
-    margin: 0 auto;
-    font-size: 25px;
-    font-weight: bold;
-    padding: 5px 0;
-    font-family: "Shift", sans-serif;
-    border: thick solid rgba(80, 80, 80, 0.74);
-    border-radius: 5px;
-    text-align: center;
-    display: none;
-    text-decoration: none;
-}
-
-#mainCont{
-    position: relative;
-    background-color: white;
-    z-index: 100;
-}
-
-.newIntroduction{
-    padding-top: 100px;
-    position: relative;
-}
-
-.newIntroduction h1{
-    font-size: 53px;
+	margin-top: 150px;	
+    color: ghostwhite;
+    font-size: 120px;
+    font-family: "Lato";
     font-weight: 900;
-    font-family: 'Lato';
-    text-transform: uppercase;
-    text-align: center;
 }
 
-.newIntroduction h3{
-    font-family: 'Lato';
-    font-weight: 400;
-    line-height: 2;
-    margin-top: 0;
+.vidContain{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: inline-block;
 }
 
-.newIntroduction p{
-    font-family: 'Lato';
-    font-weight: 300;
-    font-size: 17px;
-    line-height: 2.5;
+.vid{
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	z-index: -1;
 }
 
-.newIntroduction img {
-    height: 200px;
-    width: 200px;
+#iconDown{
+	margin-top: 100px;
+	text-align: center;
 }
 
-.newIntroTop{
-    padding-bottom: 87px;
+#iconDown a{
+	color: white;
 }
 
-.newIntroCont{}
+h1 span{
+	display: block;
+	text-align: center;	
+}
+
+#mainContent{
+
+}
+
+.introHeader h1{
+	font-family: 'Lato';
+	font-weight: 900;
+	font-size: 53px;
+	text-transform: uppercase;
+}
 
 hr{
-    border-top: 1px solid #FFB28B;
+	border-top: 1px solid rgb(8, 157, 227);
 }
 
-.introduction{
-    background-color: rgba(71, 236, 186, 0.27);   
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-.introduction img{
-    /*-webkit-mask-image: -webkit-linear-gradient(right, rgba(0,0,0,1), rgba(0,0,0,0));*/
-    height: 249px;
-    width: 585px;
+.introBody{
+	margin-top: 40px;
 }
 
-.introduction h2{
-    margin: auto 0;
-    font-family: 'Lato';
+.introBody h3{
+	font-family: 'Lato';
+	font-weight: 400;
+	line-height: 2;
+	margin-top: 0;
 }
 
-.introduction hr{
-    margin: 15px 0;
+.introBody p{
+	font-family: 'Lato';
+	font-weight: 300;
+	line-height: 2.5;
+	font-size: 17px;
 }
 
-.introduction p{
-    font-size: 18px;
-    font-family: 'Lato';
-    font-weight: 300;
-    line-height: 1.5;
+#info h3{
+	text-align: center;
+	font-weight: 300;
+	margin-bottom: 60px;
 }
 
-.apartCont h2{
-    font-family: 'Lato';
-    text-align: center;
+#info .col-md-12{
+	margin-top: 70px;
+	font-size: 17px;
+	font-family: 'Lato';
+	font-weight: 300;
+	line-height: 2;
 }
+
+#info .col-md-4{
+	margin-top: 30px;
+}
+
+#info span{
+	text-align: center;
+	font-family: 'Lato';
+	display: block;
+	margin-top: 25px;
+	font-size: 17px;
+}
+
+
+.introBody img{
+	width: 250px;
+	height: 250px;
+	display: block;
+	margin: auto;
+}
+
+h3 span{
+	display: block;
+}
+
+#about{
+	padding-top: 80px;
+}
+
+#accommodation{
+	margin-top: 100px;
+}
+
+.accommodationHeader{
+	background-color: rgb(8, 157, 227);
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+.accommodationHeader h2{
+	font-family: 'Lato';
+	font-weight: 400;
+	text-align: center;
+	font-size: 45px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.accommodationHeader hr{
+	border-top-color: white;
+}
+
+.accommodationHeader h4{
+	font-family: 'Lato';
+	font-weight: 300;
+	text-align: center;
+	color: white;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+h4 span{
+	display: block;
+	font-family: 'Lato';
+	font-weight: 400;
+}
+
+.accommodationContent{
+	background-color: #F8F8F8;
+	padding-top: 40px;	
+}
+
+.apartmentLeft h2{
+	margin-top: 10px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-family: 'Lato';
+	font-weight: 300;
+}
+
+.apartmentLeft h4{
+	line-height: 2;
+}
+
+.apartmentLeft p{
+	font-family: 'Lato';
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.apartmentLeft table{
+	font-family: 'Lato';
+	font-weight: 300;
+}
+
+.apartmentBody img{
+	width: 100%;
+	height: 100%;
+}
+
+.slider { margin: 50px 0 10px!important;}
+.flexslider { margin-bottom: 0px; border-width: 3px;}
+#carousel {border-left: none; border-right:none; border-top: 0px;}
+#carousel li {margin-right: 5px;}
+#carousel img {display: block; opacity: .5; cursor: pointer;}
+#carousel img:hover {opacity: 1;}
+#carousel .flex-active-slide img {opacity: 1; cursor: default;}
+
+
+
+#prices{
+	margin-top: 20px;
+}
+
+#prices h4{
+	font-family: 'Lato';
+	font-weight: 300;
+	text-align: center;
+}
+
+#prices hr{
+	border-color: rgb(8, 157, 227);
+	width: 150px;
+	margin: 5px auto;
+}
+
+.locationHeader{
+	background-color: rgb(8, 157, 227); 
+	padding: 50px 0;
+}
+
+.locationHeader h2{
+	font-family: 'Lato';
+	font-weight: 400;
+	text-align: center;
+	font-size: 45px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.locationHeader hr{
+	border-top-color: white;
+}
+
+.locationHeader h4{
+	font-family: 'Lato';
+	font-weight: 300;
+	text-align: center;
+	color: white;
+}
+
+.locationBody .container-fluid{
+	padding: 0;
+}
+
+.contactHeader{
+	background-color: rgb(8, 157, 227); 
+	padding: 40px 0;
+}
+
+.contactHeader h2{
+	font-family: 'Lato';
+	font-weight: 400;
+	text-align: center;
+	font-size: 45px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.contactHeader hr{
+	border-top-color: white;
+}
+
+.contactHeader h4{
+	color: white;
+	font-family: 'Lato';
+}
+
+.contactHeader span{
+	font-weight: 300;
+}
+
+.contactBody{
+	margin-top: 60px;
+	font-family: 'Lato'
+}
+
+.contactBody img{
+	align: 'middle';
+	height: 360px;
+}
+
+#imgPlanet{
+	width: 55%;
+	margin: 0 auto;
+}
+
+.contactBody button{
+	background-color: #089DE3;
+	color: white;
+	border-color: transparent;
+	text-transform: uppercase;
+}
+
+.contactBody button:hover{
+	background-color: rgba(8, 157, 227, 0.8);
+	color: white;
+	border-color: transparent;
+}
+
+.contactBody button:focus{
+	background-color: #089DE3;
+	color: white;
+	border-color: transparent;
+}
+
+.comingSoon{
+	margin-top: 80px;
+	height: 150px;
+}
+
+.comingSoon h3{
+	-ms-transform: rotate(340deg);
+	-webkit-transform: rotate(340deg);
+	transform: rotate(340deg);
+	text-align: center;
+	font-family: 'Lato';
+}
+
+footer{
+	background-color: #282828;
+	color: #b5b5b5;
+	font-family: 'Lato';
+}
+
+#footerLeft{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight: 300;
+}
+
+footer hr{
+	margin: 5px 0;
+}
+
+#footerRight{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#footerRight img{
+	height: 60px;
+	width: 60px;
+	opacity: 0.9;
+}
+
+#footerRight h4{
+	margin-right: 20px;
+}
+
+.go-to-top{
+	font-family: 'Lato';
+	font-weight: 300;
+	color: #949494;
+	text-align:center;
+	display: block; 
+	background-color: #282828;
+	padding: 20px 0;
+	border-top: 1px solid #43434b;
+	-o-transition:.9s;
+  	-ms-transition:.9s;
+  	-moz-transition:.9s;
+  	-webkit-transition:.9s;
+  	/* ...and now for the proper property */
+  	transition:.9s;
+}
+
+.go-to-top h4{
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.go-to-top:hover{
+	color: #089DE3;
+	text-decoration: none;
+};
+
+.go-to-top:focus{
+	color: #949494;
+}
+
+a:focus{
+	text-decoration: none;
+};
